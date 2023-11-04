@@ -36,3 +36,8 @@
 // console.log(b)
 // var b = Math.floor(Math.random()*5)+1
 // console.log(b)
+// we need 21 t0 25
+// var b = Math.floor(Math.random()*5 + 21)
+// console.log(b)
+
+
