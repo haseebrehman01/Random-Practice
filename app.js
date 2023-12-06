@@ -391,8 +391,12 @@
 
 
 //visit freecode camp
+//function declaration ()
+// function name(){} //function declaration
+// let name = function (){}//function expression
 
 // this keyword
+// this is window object
 //this keyword with regular function or (Implicit Binding: When we call a function as a method of the object this keyword refers to the calling object)
 // let demo = {
 //     name : "haseeb",
@@ -445,19 +449,72 @@
 //   print(1,2,3)
 
 // arrow
+//   arraow function cannot be use as constructors
+//in arrow function hoiating is not applied
+
+
 // Now we have a reference error: arguments is not defined. That's because the arguments variable does not exist in arrow functions.
 
 //   let a = (a,b,c)=> {
 //     console.log(arguments) //is not defined
 //   }
 //   a(1,2,3)
-
-const obj = {
-    name: 'deeecode',
-    age: 200,
-    print: function() {
-      console.log(this)
-    }
-  }
+//regular expression (yaha tak sahi chalega)
+// const obj = {
+//     name: 'deeecode',
+//     age: 200,
+//     print: function() {
+//       console.log(this.name)
+//     }
+//   }
   
-  obj.print()
+//   obj.print()
+
+// yaha bhand marga
+//   const obj = {
+//     name: 'deeecode',
+//     age: 200,
+//     print: function() {
+//   function name (){
+//     console.log(this)
+//   }
+//   name()
+//     }
+    
+//   }
+  
+//   obj.print() //window
+
+
+//   const obj = {
+//     name: 'deeecode',
+//     age: 200,
+//     print: function() {
+//       const print2 = () => {
+//         console.log(this)
+//       }
+      
+//       print2()
+//     }
+//   }
+  
+//   obj.print()
+  // {
+  //   name: 'deeecode',
+  //   age: 200,
+  //   print: [Function: print]
+  // }
+
+//   Wrap up
+// Although arrow functions allow you to write functions more concisely, they also have limitations. As we have seen in this article, some of the behaviors that occur in normal functions do not happen in arrow functions.
+
+// If you want to create constructors, retain the normal behavior of this or have your functions hoisted, then arrow functions are not the right approach.
+
+
+
+// console.log(this)
+
+
+
+
+
