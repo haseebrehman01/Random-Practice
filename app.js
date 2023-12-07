@@ -1,3 +1,26 @@
+"use strict";
+// ex 1
+// var a = haseeb
+// ex 2
+// myFunction();
+// function myFunction() {
+//   y = 3.14;   // This will cause an error (y is not defined)
+// }
+// ex 3
+
+// x = 3.14;    // This will not cause an error.
+// myFunction();
+
+// function myFunction() {
+//   "use strict";
+//   y = 3.14;  // This will cause an error (y is not defined).
+// }
+
+// ex 4
+// x = {p1:10, p2:20}; 
+
+
+
 // array of object
 // var info = [
 //  [
@@ -517,4 +540,287 @@
 
 
 
+// let a = "ali"
+// let result = prompt("hello", [a]);//  [a] optional 
 
+
+// let age = prompt('How old are you?', 100);
+
+// alert(`You are ${age} years old!`); // You are 100 years old!
+
+
+// confirm
+// let isBoss = confirm("Are you the boss?");
+
+// alert( isBoss ); // true if OK is pressed while false 
+
+// let start = Date.now(); // remember start time
+
+// let timer = setInterval(function() {
+//   // how much time passed from the start?
+//   let timePassed = Date.now() - start;
+
+//   if (timePassed >= 2000) {
+//     clearInterval(timer); // finish the animation after 2 seconds
+//     return;
+//   }
+
+//   // draw the animation at the moment timePassed
+//   draw(timePassed);
+
+// }, 20);
+
+// // as timePassed goes from 0 to 2000
+// // left gets values from 0px to 400px
+// function draw(timePassed) {
+//   train.style.left = timePassed / 5 + 'px';
+// }
+
+
+
+// let apples = "2";
+// let oranges = "3";
+
+// alert( apples + oranges ); // "23", the binary plus concatenates strings
+
+
+
+// let apples = "2";
+// let oranges = "3";
+
+// // both values converted to numbers before the binary plus
+// alert( +apples + +oranges ); // 5  bcz +""  =m 9 
+
+// the longer variant
+// alert( Number(apples) + Number(oranges) ); // 5
+
+
+// assignment = 
+// let a = 1;
+// let b = 2;
+
+// let c = 3 - (a += b + 1);
+
+// alert( a );//?
+// alert( c ); //?
+
+
+
+// let n = 2;
+// n = n + 5;
+// n = n * 2;
+// console.log(n)
+
+
+
+// let n = 2;
+
+// n *= 3 + 5; // right part evaluated first, same as n *= 8
+
+// alert( n ); // 16
+
+// let a = 2
+// ++a
+// let b = 2
+// let counter = b++;   //2
+// console.log(counter)//2
+// console.log(b)//3
+// console.log( counter + a + b);//8
+
+
+
+// let counter = 1;
+// let a = counter++; // 1
+
+// alert(a); // 1
+
+// let counter = 0;
+// alert( counter++ ); //
+// console.log(counter)  // 1 qka yeh ik dafa print hona ka baad dusri bar print hona pa + karega that why 2 hua    
+
+
+        // let variable = 1
+        // let x= variable++
+        // console.log(x)
+        // console.log(x)
+        // console.log(x)
+        // console.log(x)
+        // console.log(x)
+        // console.log(variable)
+
+
+//         let sum = 0;
+
+// while (true) {
+
+//   let value = +prompt("Enter a number", '');
+
+//   if (! value)
+//      break; // (*)
+
+//   sum += value;
+
+// }
+// alert( 'Sum: ' + sum );
+
+// outer: for (let i = 0; i < 3; i++) {
+
+//     for (let j = 0; j < 3; j++) {
+  
+//       let input = prompt(`Value at coords (${i},${j})`, '');
+  
+//       // if an empty string or canceled, then break out of both loops
+//       if (!input) break outer; // (*)
+//   console.log(input)
+//       // do something with the value...
+//     }
+//   }
+  
+//   alert('Done!');
+
+
+// for (let i = 2; i <= 10; i++) {
+//     if (i % 2 == 0) {
+//         document.write( i);
+//       }
+//       else{
+//         console.log(i)
+//       }
+
+//   }
+
+//   if (i % 2 !== 0){
+//     document.write( i );    
+// }
+
+// let num;
+
+// do {
+//   num = prompt("Enter a number greater than 100?", 0);
+// } while (num <= 100 && num); 
+
+
+
+
+// let a = "haseeb"
+
+// let demo = ()=>{
+//     a = "ali"
+// }
+// console.log(a)
+// demo()
+// console.log(a)
+// c
+
+
+
+
+// let userName = 'John';
+
+// function showMessage() {
+//   let userName = "Bob"; // declare a local variable
+
+//   let message = 'Hello, ' + userName; // Bob
+//   alert(message);
+// }
+
+// // the function will create and use its own userName
+// showMessage();
+
+// alert( userName ); // John, unchanged, the function did not access the outer variable
+
+
+
+
+	
+// function ask(question, yes, no) {
+//     if (confirm(question)) yes()
+//     else no();
+//   }
+  
+//   function showOk() {
+//     alert( "You agreed." );
+//   }
+  
+//   function showCancel() {
+//     alert( "You canceled the execution." );
+//   }
+  
+//   // usage: functions showOk, showCancel are passed as arguments to ask
+//   ask("Do you agree?", showOk, showCancel);
+
+
+
+
+
+
+
+
+
+// function ask(question, yes, no) {
+//     if (confirm(question)) yes()
+//     else no();
+//   }
+  
+//   function showOk() {
+//     alert( "You agreed." );
+//   }
+  
+//   function showCancel() {
+//     alert( "You canceled the execution." );
+//   }
+  
+//   // usage: functions showOk, showCancel are passed as arguments to ask
+//   ask("Do you agree?", showOk, showCancel);
+
+
+// function calc(a, op, b) {
+//     // Convert input strings to numbers
+//     var num1 = parseFloat(a());
+//     var num2 = parseFloat(b());
+    
+//     // Check if the conversion is successful
+//     if (isNaN(num1) || isNaN(num2)) {
+//         document.write("Invalid input. Please enter valid numbers.");
+//         return;
+//     }
+
+//     // Perform the operation based on the operator
+//     let result;
+//     switch (op()) {
+//         case '+':
+//             result = num1 + num2;
+//             break;
+//         case '-':
+//             result = num1 - num2;
+//             break;
+//         case '*':
+//             result = num1 * num2;
+//             break;
+//         case '/':
+//             result = num1 / num2;
+//             break;
+//         default:
+//             document.write("Invalid operator. Please enter +, -, *, or /.");
+//             return;
+//     }
+
+//     document.write(result);
+// }
+
+// function p1() {
+//     let p1 = prompt("Enter the first number");
+//     return p1;
+// }
+
+// function p2() {
+//     let p2 = prompt("Enter the second number");
+//     return p2;
+// }
+
+// function op() {
+//     let ope = prompt("Enter the operator (+, -, *, /)");
+//     return ope;
+// }
+
+// calc(p1, op, p2);
