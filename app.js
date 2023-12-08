@@ -824,3 +824,49 @@
 // }
 
 // calc(p1, op, p2);
+
+
+
+
+// function greeting() {
+//     // [1] Some code here
+//     var    b =     sayHi; // iska andar hai haseeb
+// b()
+// // console.log(b)
+
+//     // [2] Some code here
+//   }
+//   function sayHi() {
+// return alert("hello")
+
+//   }
+  
+//   // Invoke the `greeting` function
+//   greeting();
+  
+//   // [3] Some code here
+
+
+// callstck && visulaizing call stack 
+// function one(){
+// return 1
+// }
+// function two(){
+// return one() + one()
+// }
+// function three(){
+//     var result = two() + one()
+//     return result
+// }
+// var done = three()
+// console.log(done)
+
+
+function sayName(name){
+    return name;
+  }
+  function greeting(){
+    var myName = sayName('haseeb')
+    console.log(`Hello ${myName}`)
+  }
+  greeting()    
