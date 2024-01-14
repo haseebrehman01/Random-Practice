@@ -884,3 +884,37 @@
 // }
 
 // higherOrderFunction(callbackFunction);
+
+
+
+
+
+
+
+
+//sir ghous batch 10 (sunday) task
+// // find missing number
+// var arr = [1,2,3,4,6,7,8]
+// for (var i = 0 ; i < arr.length;i++){ //means agar arr mai + karana ka baad woh number array mai mojood hoga toh ussa 1 dega warna 2
+//     if(arr[i+1] - arr[i] === 2  ){
+// console.log(arr[i]+1)
+//     } //usa 5 mila nahi toh woh 6 pa chala gaya or 6-4 =2 , lkn yeh logic 2 sequence mai missing number mai kaam nahi karegi
+// }
+
+
+// complete code
+// var arr = [1, 2, 3, 4, 6, 7, 8 , 15 , 17,19];
+// for (var i = 0; i < arr.length - 1; i++) {
+//     if (arr[i + 1] - arr[i] > 1) {
+//         for (var j = 1; j < arr[i + 1] - arr[i]; j++) {
+//             console.log(arr[i] + j);
+//         }
+//     }
+// }
+
+
+
+
+
+
+console.log(true+true+true*3)
